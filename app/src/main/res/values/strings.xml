@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">UV Cap</string>
+    <string name="CUES_text">CUES shows the summation of (Seconds exposed x U.V index). It helps put a quantifiable value on the amount U.V accumulated over the duration of the day.</string>
+    <string name="index_default">Here you will get tips on what to do for each range of UV Index.</string>
+    <string name="navigatio_drawer_open">Open navigation drawer</string>
+    <string name="navigatio_drawer_close">Close navigation drawer</string>
+
+    <string name="default_skin">Default skin type I selected</string>
+    <string name="skin_I">Skin type I selected</string>
+    <string name="skin_II">Skin type II selected</string>
+    <string name="skin_III">Skin type III selected</string>
+    <string name="skin_IV">Skin type IV selected</string>
+    <string name="skin_V">Skin type V selected</string>
+    <string name="skin_VI">Skin type VI selected</string>
+
+    <string name="default_spf">Default SPF value 0 chosen</string>
+    <string name="spf_I">SPF value of 15 selected</string>
+    <string name="spf_II">SPF value of 30 selected</string>
+    <string name="spf_III">SPF value of 40 selected</string>
+    <string name="spf_IV">SPF value of 45 selected</string>
+    <string name="spf_V">SPF value of 50 selected</string>
+    <string name="spf_VI">SPF value of 60 selected</string>
+
+
+</resources>

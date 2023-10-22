@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/accent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="@drawable/baseline_menu_24" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:text="Choose your skin tone"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:visibility="visible"></TextView>
+
+        <!--<GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:rowCount = "2"
+            android:columnCount="3"
+            android:layout_gravity="fill_horizontal">
+
+            <Button
+                android:text="Cell 0"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="14dip" />
+            <Button
+                android:text="Cell 1"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:textSize="14dip" />
+
+            <Button
+                android:text="Cell 2"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:textSize="14dip" />
+            <Button
+                android:text="Cell 3"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textSize="14dip" />
+            <Button
+                android:text="Cell 4"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:textSize="14dip" />
+            <Button
+                android:text="Cell 5"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:textSize="14dip" />
+
+        </GridLayout>-->
+        <LinearLayout
+            android:id="@+id/mainButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:checkableBehavior="single"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/type1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#F0D1B5"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/type2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#DFB593"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/type3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#CA9F81"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonLayout1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/type4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#AF7954"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/type5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#9C6136"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/type6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#3A2320"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/changingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainButtonLayout"
+            android:text="@string/default_skin"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible"></TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changingView"
+            android:text="Choose your SPF value"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:visibility="visible"></TextView>
+
+        <LinearLayout
+            android:id="@+id/mainButtonLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:checkableBehavior="single"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/spf1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="15"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/spf2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="30"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/spf3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="40"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonLayout3"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/spf4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="45"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/spf5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="50"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/spf6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="60"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/changingView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainButtonLayout2"
+            android:text="@string/default_spf"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible"></TextView>
+
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
