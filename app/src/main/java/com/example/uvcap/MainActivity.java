@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void run() {
 
-                if (bluetoothGatt!=null) connectToDevice(thread.mainActivity);
+                if (mytime<1) connectToDevice(thread.mainActivity);
 
                 //updates the graph
                 updateGraph();
@@ -187,6 +187,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     spfSet = false;
                     Log.d("SPFSPFSPF","SPF Reset after 20 seconds");
                     spfNotify();
+                }
+
+                if(mytime%60 == 0 && mytime != 0) {
+                    linechart.moveViewToX(mytime);
+                    dataVals.clear();
+                    mytime = 0;
+                    /*mytime = mytime -2;*/
                 }
 
                 spfTimer++;

@@ -32,7 +32,7 @@ public class RCThread extends Thread {
             } catch(Exception ignored) {Log.e("Thread Error",ignored.getMessage());}
         }*/
         int i = 0;
-        while(i <= 30){
+        while(true){
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
