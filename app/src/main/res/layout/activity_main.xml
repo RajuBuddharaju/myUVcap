@@ -29,6 +29,7 @@
             android:background="@color/accent"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
+            android:fontFamily="@font/groteskbold"
             app:navigationIcon="@drawable/baseline_menu_24" />
 
         <!--androidx.cardview.widget.CardView
@@ -92,6 +93,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="@font/groteskbold"
                     android:text="UV Index: "
                     android:textColor="@color/black"
                     android:textSize="34sp"
@@ -106,6 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginRight="5dp"
+                    android:fontFamily="@font/groteskmedium"
                     android:text="@string/index_default"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -118,6 +121,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="@font/groteskbold"
                     android:text="UV Dosage: "
                     android:textColor="@color/black"
                     android:textSize="34sp"

@@ -16,7 +16,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/groteskbold"
         android:text="UV Cap"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 
 </LinearLayout>

@@ -20,8 +20,8 @@ public class App extends Application {
     public static boolean spfSet = false;
 
 
-    public static float UVIndex;
-    public static double UVDosage;
+    public static float UVIndex = 0;
+    public static double UVDosage = 0;
     // The recommend UV Dosage for skin type selected
     public static double recUVDosage = 50;
     public static double SPF = 1;

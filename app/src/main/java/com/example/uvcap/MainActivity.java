@@ -348,14 +348,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //LineDataSet settings
         lineDataSet1.setHighLightColor(R.color.black);
-        lineDataSet1.setColor(R.color.black);
+        lineDataSet1.setColor(getResources().getColor(R.color.accent));
         lineDataSet1.setCubicIntensity(0.2f);   //to enable the cubic density : if 1 then it will be sharp curve
         lineDataSet1.setDrawFilled(true);   //to fill the below of smooth line in graph
         lineDataSet1.setFillColor(R.color.black);
-        lineDataSet1.setFillAlpha(80);  //set the transparency of the fill
-        lineDataSet1.setMode(LineDataSet.Mode.CUBIC_BEZIER); //makes the thing curvy
+        lineDataSet1.setFillAlpha(40);  //set the transparency of the fill
+        lineDataSet1.setMode(LineDataSet.Mode.STEPPED); //makes the thing curvy
         lineDataSet1.setDrawValues(false); //removes point values
-        lineDataSet1.setLineWidth(2);
+        lineDataSet1.setLineWidth(4);
         lineDataSet1.setDrawCircles(false);
 
         //LineData settings

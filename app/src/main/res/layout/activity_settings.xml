@@ -20,7 +20,8 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -29,6 +30,7 @@
             android:background="@color/accent"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
+            android:fontFamily="@font/groteskbold"
             app:navigationIcon="@drawable/baseline_menu_24" />
 
         <TextView
@@ -36,11 +38,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar"
+            android:fontFamily="@font/groteskbold"
             android:text="Choose your skin tone"
             android:textColor="@color/black"
             android:textSize="34sp"
             android:textStyle="bold"
-            android:visibility="visible"></TextView>
+            android:visibility="visible"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"></TextView>
 
         <!--<GridLayout
             android:id="@+id/gridLayout"
@@ -90,7 +95,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView1"
             android:checkableBehavior="single"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp">
 
             <LinearLayout
                 android:id="@+id/buttonLayout1"
@@ -171,21 +178,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mainButtonLayout"
+            android:fontFamily="@font/groteskmedium"
             android:text="@string/default_skin"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:visibility="visible"></TextView>
+            android:visibility="visible"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="13dp"></TextView>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/changingView"
+            android:fontFamily="@font/groteskbold"
             android:text="Choose your SPF value"
             android:textColor="@color/black"
             android:textSize="34sp"
             android:textStyle="bold"
-            android:visibility="visible"></TextView>
+            android:visibility="visible"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"></TextView>
 
         <LinearLayout
             android:id="@+id/mainButtonLayout2"
@@ -193,7 +206,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView2"
             android:checkableBehavior="single"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp">
 
             <LinearLayout
                 android:id="@+id/buttonLayout3"
@@ -274,10 +289,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mainButtonLayout2"
+            android:fontFamily="@font/groteskmedium"
             android:text="@string/default_spf"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:visibility="visible"></TextView>
+            android:visibility="visible"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="13dp"></TextView>
 
 
     </RelativeLayout>
