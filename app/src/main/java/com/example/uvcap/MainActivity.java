@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     spfNotify();
                 }
 
-                if(mytime%60 == 0 && mytime != 0) {
+                if(mytime==60) {
                     linechart.moveViewToX(mytime);
                     dataVals.clear();
                     mytime = 0;
